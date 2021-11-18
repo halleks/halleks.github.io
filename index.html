@@ -11,7 +11,18 @@
 </head>
 
 <body>
-    <!--
-    <lottie-player id="logo" src="loading.json" background="transparent"  speed="1" loop autoplay></lottie-player> -->
-    <lottie-player id="logo" src="shortload.json" background="transparent"  speed="1" loop autoplay></lottie-player>
-</body></html>
+    <script>
+        $(document).ready(function() {
+            $(".loader").delay(1000).fadeOut("slow", function() {
+                $(".loader").remove();
+            });
+        });
+    </script>
+    <h1 style="color: white">asdasd</h1>
+    <div class="loader">
+        <lottie-player id="logo" src="shortload.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    </div>
+    
+</body>
+
+</html>

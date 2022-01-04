@@ -3,6 +3,9 @@ html, body{
     padding: 0;
     /*background-color: #161616;*/
     background-color: black;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: white;
+    height: 100%;
 }
 .loader{
     top: 0;
@@ -22,3 +25,12 @@ html, body{
 }
 
 ::-webkit-scrollbar {display:none;}
+
+h1{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}

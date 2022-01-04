@@ -8,9 +8,17 @@
     <title>Halleks</title>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
+    <link href="http://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+
+
 </head>
 
 <body>
+   
+   <!--wip-->
+    <h1>Work in progress</h1>
+    
+    <!--loading screen-->
     <div class="loader">
         <lottie-player id="logo" src="shortload.json" background="transparent" speed="1" loop autoplay></lottie-player>
     </div>
@@ -18,7 +26,11 @@
     <script>
         $(window).on("load", function() {
             $(".loader").delay(1000).fadeOut("slow");
+            setTimeout(function() {
+                $('.loader').remove();
+            }, 2000);
         });
     </script>
+
 
 </body></html>

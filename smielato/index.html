@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smielato</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="http://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="trigger" class="trigger"></div>
+    <nav>
+        <ul>
+            <li>
+                <a href="#hero">
+                    <ion-icon class="bullet-indicator" id="circ1" name="radio-button-on-outline"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#about">
+                    <ion-icon class="bullet-indicator" id="circ2" name="ellipse-outline"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#products">
+                    <ion-icon class="bullet-indicator" id="circ3" name="ellipse-outline"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <a id="hero" style="display: block; position: relative; top: -250px; visibility: hidden;"></a>
+    <div class="hero">
+        <img style="top: 15%" src="img/monti.svg" class="hero-img rellax" data-rellax-speed="-5">
+        <img style="top: 40%" src="img/skyline.svg" class="hero-img rellax" data-rellax-speed="-4">
+        <img style="top: 3%" src="img/mole.svg" class="hero-img rellax" data-rellax-speed="-3">
+        <img style="top: 50%" src="img/secondo-piano.svg" class="hero-img rellax" data-rellax-speed="-2">
+        <img style="top: 55%" src="img/primo-piano.svg" class="hero-img">
+        <img style="top: 33%; width: 40%; left: 50%; transform: translateX(-50%);" src="img/testo.svg" class="hero-img rellax" data-rellax-speed="2">
+        <img style="top: 30%; left:20%; width: 10%" src="img/api.svg" class="hero-img rellax" data-rellax-speed="7">
+        <a href="#about">
+            <ion-icon class="scroll-icon animate__animated animate__fadeInDown" name="chevron-down-outline"></ion-icon>
+        </a>
+    </div>
+    <section class="about">
+        <a id="about" style="display: block; position: relative; top: -250px; visibility: hidden;"></a>
+        <div class="row">
+            <div class="col-6">
+                <img class="honeycomb1 rellax" src="img/about_us/alveare1.svg">
+                <img class="honeycomb2 rellax" src="img/about_us/alveare2.svg">
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner rounded-3 overflow-hidden">
+                        <div class="carousel-item active">
+                            <img src="img/about_us/Immagine1.jpg" class="d-block w-100" alt="Miele">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/about_us/Immagine2.jpg" class="d-block w-100" alt="Apicoltore">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/about_us/Immagine3.jpg" class="d-block w-100" alt="Nettare">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-3"></div>
+            <div class="col">
+                <div class="text">
+                    <h1>Chi siamo?</h1>
+                    <hr>
+                    <p>Smielato nasce nel 2022 a Torino, si tratta di una nuova attività che ha l'obiettivo di portarvi il miele artigianale delle nostre valli direttamente nel centro città.
+                    </p>
+                    <p>Con il nostro furgone giriamo ogni giorno le strade di Torino, consulta gli orari per trovare il pop-up store più vicino!</p>
+                    <a href="#products"><button type="button" class="btn btn-lg scopri">Scopri di più</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="products">
+        <img src="img/honeycomb.svg" class="transition">
+        <div class="row">
+            <div class="col-4 text">
+                <a id="products" style="display: block; position: relative; top: -320px; visibility: hidden;"></a>
+                <h1>I nostri prodotti</h1>
+                <p>Scopri i nostri prodotti biologici,<br>
+                    estratti e processati a mano dai nostri<br>
+                    apicoltori indipendenti.
+                </p>
+                <p>Prenota online un barattolo<br>
+                    e ritiralo dove preferisci.
+                </p>
+                <a href="#"><button type="button" class="btn btn-lg prenota">Prenota ora</button></a>
+            </div>
+            <div class="col-4">
+                <img class="miele img-fluid" src="img/about_us/acacia.png">
+            </div>
+            <div class="col-4">
+                <img class="miele img-fluid" src="img/about_us/castagno.png">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <h5>Sito</h5>
+                <ul class="list-unstyled ">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Chi siamo</a></li>
+                    <li><a href="#">Prodotti</a></li>
+                    <li><a href="#">Dove trovarci</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h5>Contatti</h5>
+                <ul class="list-unstyled ">
+                    <li><a href="mailto:contatti@smielato.it">contatti@smielato.it</a></li>
+                    <li style="padding-top: 8px;"><a href="#">
+                            <ion-icon name="logo-twitter"> </ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-facebook"> </ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-instagram"> </ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-vk"> </ion-icon>
+                        </a>
+                    </li>
+                    <a href="#">
+                        +39 3389988667
+                    </a>
+                </ul>
+            </div>
+            <div class="col">
+                <h5>Crediti</h5>
+                <ul class="list-unstyled ">
+                    <li>
+                        Da un'idea di Pietro<br>
+                        Creato con <ion-icon style="font-size: 12px;" name="heart"></ion-icon> da Alessandro grazie a<br>
+                        Bootstrap, jQuery, rellax.js, animate.css
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body></html>

@@ -44,7 +44,7 @@
                 </a>
             </li>
             <li>
-                <a href="#products">
+                <a href="#where">
                     <ion-icon class="bullet-indicator" id="circ4" name="ellipse-outline"></ion-icon>
                 </a>
             </li>
@@ -66,10 +66,19 @@
             <a style="display: none" href="#about"><button type="button" class="btn btn-primary btn-lg rellax" data-rellax-speed="4">Scopri di più</button></a>
         </div>
     </section>
-    <a id="about" style="display: block; position: relative; top: 0px; visibility: hidden;"></a>
+    <a id="about" style="display: block; position: relative; top: -100px; visibility: hidden;"></a>
     <section class="about">
         <div class="container px-4 py-5">
-            <div class="row d-flex align-items-center justify-content-around g-5 py-5">
+            <div class="row d-flex flex-row-reverse align-items-center justify-content-around g-5 py-5">
+                <div class="col-lg-5 text-center text-lg-start">
+                    <h2>Chi siamo?</h2>
+                    <p class="lead">Smielato nasce nel 2022 a Torino, si tratta di una nuova attività che ha l'obiettivo di portarvi il miele artigianale delle nostre valli direttamente nel centro città.</p>
+                    <p class="lead">Con il nostro furgone giriamo ogni giorno le strade di Torino, consulta gli orari per trovare il pop-up store più vicino!</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-lg-start justify-content-center">
+                        <a href="#where"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Dove trovarci</button></a>
+                        <a href="#products"><button type="button" class="btn btn-outline-primary btn-lg px-4">Scopri i prodotti</button></a>
+                    </div>
+                </div>
                 <div class="col-lg-6">
                     <div class="img-wrap position-relative">
                         <img class="alveare alv1 rellax" data-rellax-speed="0.5" data-rellax-percentage="0.5" src="assets/slides/alveare1.svg">
@@ -77,15 +86,7 @@
                         <img class="alveare alv2 rellax" data-rellax-speed="1.5" data-rellax-percentage="0.5" src="assets/slides/alveare2.svg">
                     </div>
                 </div>
-                <div class="col-lg-5">
-                    <h2>Chi siamo?</h2>
-                    <p class="lead">Smielato nasce nel 2022 a Torino, si tratta di una nuova attività che ha l'obiettivo di portarvi il miele artigianale delle nostre valli direttamente nel centro città.</p>
-                    <p class="lead">Con il nostro furgone giriamo ogni giorno le strade di Torino, consulta gli orari per trovare il pop-up store più vicino!</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <a href="#where"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Dove trovarci</button></a>
-                        <a href="#products"><button type="button" class="btn btn-outline-primary btn-lg px-4">Scopri i prodotti</button></a>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -136,31 +137,54 @@
     transform: scaleY(-1);
     filter: FlipV;
     -ms-filter: "FlipV";'></div>
-    <a id="where" style="display: block; position: relative; top: 0px; visibility: hidden;"></a>
+    <a id="where" style="display: block; position: relative; top: -100px; visibility: hidden;"></a>
     <section class="where">
         <div class="container px-4 py-5">
-            <div class="row d-flex align-items-center justify-content-around g-5 py-5">
+            <div class="row d-flex flex-row-reverse align-items-center justify-content-around g-5 py-5">
+                <div class="col-lg-5">
+                    <h2>Dove trovarci</h2>
+                    <div id="places" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+                        <div class="carousel-indicators d-lg-flex d-none">
+                            <button type="button" data-bs-target="#places" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#places" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#places" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner px-5">
+                            <div class="carousel-item p-5 active" id="pc">
+                                <h5>Piazza Castello</h5>
+                                <ul>
+                                    <li>Dal lunedì al venerdì, dalle 08.00 alle 10.00</li>
+                                    <li>Domenica, tutto il giorno</li>
+                                </ul>
+                            </div>
+                            <div class="carousel-item p-5" id="pv">
+                                <h5>Piazza Vittorio</h5>
+                                <ul>
+                                    <li>Dal lunedì al venerdì, dalle 10.30 alle 12.00</li><br>
+                                </ul>
+                            </div>
+                            <div class="carousel-item p-5" id="val">
+                                <h5>Parco del Valentino</h5>
+                                <ul>
+                                    <li>Dal lunedì al venerdì, dalle 15.00 alle 18.00</li>
+                                    <li>Sabato, tutto il giorno</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#places" data-bs-slide="prev" onclick="luogo()">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden" onclick="">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#places" data-bs-slide="next" onclick="luogo()">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
                 <div class="col-lg-6">
                     <div class="rounded-3 w-100" id='map' style='width: 400px; height: 300px; position: relative;'></div>
                     <script src="map.js">
                     </script>
-                </div>
-                <div class="col-lg-5">
-                    <h2>Dove trovarci</h2>
-                    <h5 id="map-pc">Piazza Castello</h5>
-                    <ul>
-                        <li>Dal lunedì al venerdì, dalle 08.00 alle 10.00</li>
-                        <li>Domenica, tutto il giorno</li>
-                    </ul>
-                    <h5>Piazza Vittorio</h5>
-                    <ul>
-                        <li>Dal lunedì al venerdì, dalle 10.00 alle 12.00</li>
-                    </ul>
-                    <h5>Parco del Valentino</h5>
-                    <ul>
-                        <li>Dal lunedì al venerdì, dalle 15.00 alle 18.00</li>
-                        <li>Sabato, tutto il giorno</li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -170,7 +194,7 @@
             <div class="row">
                 <div class="col">
                     <h5>Sito</h5>
-                    <ul class="list-unstyled ">
+                    <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Chi siamo</a></li>
                         <li><a href="#">Prodotti</a></li>
@@ -223,7 +247,20 @@
         </div>
     </footer>
     <script src="script.js"></script>
-    <script src="map_init.js"></script>
+    <script src="map.js"></script>
+    <script>
+        function luogo() {
+            if ($("#pc").hasClass("active")) {
+                piazzacastello();
+            }
+            if ($("#pv").hasClass("active")) {
+                piazzavittorio();
+            }
+            if ($("#val").hasClass("active")) {
+                valentino();
+            }
+        }
+    </script>
     <script>
         var rellax = new Rellax('.rellax');
     </script>

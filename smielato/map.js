@@ -46,8 +46,6 @@
 	    const el = document.createElement('div');
 	    el.className = 'marker';
 
-	    // make a marker for each feature and add to the map
-	    // make a marker for each feature and add it to the map
 	    new mapboxgl.Marker(el)
 	        .setLngLat(feature.geometry.coordinates)
 	        .setPopup(
@@ -65,3 +63,30 @@
 [7.684191095798412, 45.073274366042014], // southwestern corner of the bounds
 [7.685287958483167, 45.04928303467391] // northeastern corner of the bounds
 ]);
+
+	function piazzavittorio() {
+	    map.flyTo({
+	        center: [7.685457274566737, 45.050960514872976],
+	        zoom: 14.3,
+	        pitch: 20,
+	        essential: true // this animation is considered essential with respect to prefers-reduced-motion
+	    });
+	}
+
+	function valentino() {
+	    map.flyTo({
+	        center: [7.686066487830182, 45.070382824586574],
+            zoom: 14.3,
+	        pitch: 20,
+	        essential: true // this animation is considered essential with respect to prefers-reduced-motion
+	    });
+	}
+
+	function piazzacastello() {
+	    map.flyTo({
+	        center: [7.694920687302408, 45.06496494171627],
+            zoom: 14.3,
+	        pitch: 20,
+	        essential: true // this animation is considered essential with respect to prefers-reduced-motion
+	    });
+	}

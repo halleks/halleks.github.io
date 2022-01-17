@@ -22,9 +22,14 @@
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <body>
+       <!--loading screen-->
+    <div class="loader">
+        <lottie-player id="logoload" src="loader.json" background="transparent" speed="1.5" loop autoplay></lottie-player>
+    </div>
     <div id="trigger" class="trigger"></div>
     <nav>
         <ul>
@@ -260,6 +265,14 @@
                 valentino();
             }
         }
+    </script>
+    <script>
+        $(window).on("load", function() {
+            $(".loader").delay(1000).fadeOut("slow");
+            setTimeout(function() {
+                $('.loader').remove();
+            }, 2000);
+        });
     </script>
     <script>
         var rellax = new Rellax('.rellax');

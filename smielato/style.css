@@ -298,3 +298,21 @@ nav {
 .orario{
     height: 400px;
 }
+.loader{
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+#logoload{
+    width: 10%;
+    height: auto;
+}

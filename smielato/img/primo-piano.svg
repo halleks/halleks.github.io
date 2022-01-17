@@ -17,10 +17,10 @@
 	<polygon class="st0" points="1000,81.3 1000,295.9 0,289.9 0,61 39,61 94.2,83.2 86.1,83.2 86.1,126.2 204.1,126.2 204.8,86.2 
 		389.2,73.9 538.8,76.3 579.7,76.9 775.1,80 935.4,80.9 	"/>
 </g>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="500" y1="293.5" x2="500" y2="135.8898">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="500" y1="1" x2="500" y2="356.1" gradientTransform="matrix(1 0 0 -1 0 492)">
 	<stop  offset="0.4099" style="stop-color:#010101"/>
 	<stop  offset="0.6688" style="stop-color:#0D0A02"/>
 	<stop  offset="1" style="stop-color:#191203"/>
 </linearGradient>
-<rect y="135.9" class="st1" width="1000" height="157.6"/>
+<rect y="135.9" class="st1" width="1000" height="355.1"/>
 </svg>

@@ -64,7 +64,7 @@
 [7.685287958483167, 45.04928303467391] // northeastern corner of the bounds
 ]);
 
-	function piazzavittorio() {
+	function valentino() {
 	    map.flyTo({
 	        center: [7.685457274566737, 45.050960514872976],
 	        zoom: 14.3,
@@ -73,7 +73,7 @@
 	    });
 	}
 
-	function valentino() {
+	function piazzacastello() {
 	    map.flyTo({
 	        center: [7.686066487830182, 45.070382824586574],
             zoom: 14.3,
@@ -82,7 +82,7 @@
 	    });
 	}
 
-	function piazzacastello() {
+	function piazzavittorio() {
 	    map.flyTo({
 	        center: [7.694920687302408, 45.06496494171627],
             zoom: 14.3,

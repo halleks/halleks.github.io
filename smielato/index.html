@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Smielato</title>
     <link href="style.css" type="text/css" rel="stylesheet">
-    
-    <link rel="preload"  as="fetch" href="loader.json">
+
+    <link rel="preload" as="fetch" href="loader.json">
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
@@ -28,7 +28,7 @@
 </head>
 
 <body>
-       <!--loading screen-->
+    <!--loading screen-->
     <div class="loader">
         <lottie-player id="logoload" src="loader.json" background="transparent" speed="1.5" loop autoplay></lottie-player>
     </div>
@@ -150,42 +150,28 @@
             <div class="row d-flex flex-row-reverse align-items-center justify-content-around g-5 py-5">
                 <div class="col-lg-5">
                     <h2>Dove trovarci</h2>
-                    <div id="places" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-                        <div class="carousel-indicators d-lg-flex d-none">
-                            <button type="button" data-bs-target="#places" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#places" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#places" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner px-5">
-                            <div class="carousel-item p-5 active" id="pc">
-                                <h5>Piazza Castello</h5>
-                                <ul>
-                                    <li>Dal lunedì al venerdì, dalle 08.00 alle 10.00</li>
-                                    <li>Domenica, tutto il giorno</li>
-                                </ul>
-                            </div>
-                            <div class="carousel-item p-5" id="pv">
-                                <h5>Piazza Vittorio</h5>
-                                <ul>
-                                    <li>Dal lunedì al venerdì, dalle 10.30 alle 12.00</li><br>
-                                </ul>
-                            </div>
-                            <div class="carousel-item p-5" id="val">
-                                <h5>Parco del Valentino</h5>
-                                <ul>
-                                    <li>Dal lunedì al venerdì, dalle 15.00 alle 18.00</li>
-                                    <li>Sabato, tutto il giorno</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#places" data-bs-slide="prev" onclick="luogo()">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden" onclick="">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#places" data-bs-slide="next" onclick="luogo()">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                    <p class="pb-3 text-muted">Premi su un luogo per visualizzarlo sulla mappa</p>
+                    <div id="pc" onclick="piazzacastello()">
+                        <h5>Piazza Castello</h5>
+                        <ul>
+                            <li>Dal lunedì al venerdì, dalle 08.00 alle 10.00</li>
+                            <li>Domenica, tutto il giorno</li>
+                            
+                        </ul>
+                    </div>
+                    <div id="val" onclick="valentino()">
+                        <h5>Parco del Valentino</h5>
+                        <ul>
+                            <li>Dal lunedì al venerdì, dalle 15.00 alle 18.00</li>
+                            <li>Sabato, tutto il giorno</li>
+                        </ul>
+                    </div>
+                    <div id="pv" onclick="piazzavittorio()">
+                        <h5>Piazza Vittorio</h5>
+                        <ul>
+                            <li>Dal lunedì al venerdì, dalle 10.30 alle 12.00</li>
+                            
+                        </ul>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -255,19 +241,6 @@
     </footer>
     <script src="script.js"></script>
     <script src="map.js"></script>
-    <script>
-        function luogo() {
-            if ($("#pc").hasClass("active")) {
-                piazzacastello();
-            }
-            if ($("#pv").hasClass("active")) {
-                piazzavittorio();
-            }
-            if ($("#val").hasClass("active")) {
-                valentino();
-            }
-        }
-    </script>
     <script>
         $(window).on("load", function() {
             $(".loader").delay(1000).fadeOut("slow");

@@ -34,3 +34,16 @@ h1{
     top: 50%;
     transform: translateY(-50%);
 }
+.video{
+    width: 1280px;
+    height: 720px;
+}
+.videowrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.video-h{
+    text-align: center;
+}

@@ -4,7 +4,8 @@
 <head>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>Halleks</title>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
@@ -14,14 +15,20 @@
 </head>
 
 <body>
-   <!--riconosci browser-->
+    <!--riconosci browser-->
     <script>
         if (BrowserDetect.browser == 'Safari') {
             $('.loader').remove();
         }
     </script>
     <!--wip-->
-    <h1>Work in progress</h1>
+    <!-- <h1>Work in progress</h1> -->
+    <div class="videowrapper">
+        <h3 class="video-h">Latest work</h3>
+        <iframe class="video" src="https://www.youtube.com/embed/CBUulWMNoEo" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
 
     <!--loading screen-->
     <div class="loader">
@@ -29,13 +36,15 @@
     </div>
 
     <script>
-        $(window).on("load", function() {
+        $(window).on("load", function () {
             $(".loader").delay(1000).fadeOut("slow");
-            setTimeout(function() {
+            setTimeout(function () {
                 $('.loader').remove();
             }, 2000);
         });
     </script>
 
 
-</body></html>
+</body>
+
+</html>
